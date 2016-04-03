@@ -27,7 +27,7 @@ Run
 composer dumpautoload
 ```
 ## Use
-Visit ```/moviedb/tt2937696``` in your web browser to see it in action
+Visit ```http://localhost/moviedb/tt2937696``` in your web browser to see it in action
 
 To access the package in your application use:
 ```
