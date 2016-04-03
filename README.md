@@ -1,4 +1,4 @@
-# Laravel-OMDB
-A package for Laravel that retrieves OMDB data
+# Laravel OMDB Package
+A Laravel package for accessing OMDB data
 
 ## Still in development
