@@ -9,7 +9,7 @@ The OMDb API is a free web service to obtain movie information. OMDb API's data 
 OMDb API Homepage: http://www.omdbapi.com/
 
 ## Installation
-Add this to your `composer.json` under psr-4:
+Add this to your `composer.json` under `psr-4`:
 ```
 "DigiPig\\MovieDB\\": "packages/digipig/moviedb/src/"
 ```
