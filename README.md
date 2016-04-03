@@ -22,7 +22,7 @@ Add this to your `app.php` config file in aliases:
 'MovieDB' => DigiPig\MovieDB\MovieDBFacade::class
 ```
 
-To access the package in your controllers/models use 
+To access the package in your application use:
 ```
 use DigiPig\MovieDB;
 $movie = \MovieDB::getMovie('tt2937696');
