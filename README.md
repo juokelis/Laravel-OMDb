@@ -6,7 +6,7 @@ A Laravel package to access the OMDb API in your Laravel application.
 ## What is the OMDb API?
 The OMDb API is a free web service to obtain movie information. OMDb API data is a mashup of other movie sites such as IMBD, Rotten Tomatoes and OMDb contributers.
 
-Find out more here: http://www.omdbapi.com/
+OMDb API Homepage: http://www.omdbapi.com/
 
 ## Installation
 Add this to your `composer.json` under psr-4:
