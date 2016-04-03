@@ -4,6 +4,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MovieDBServiceProvider extends ServiceProvider {
 
+
 	/**
 	 * Bootstrap the application services.
 	 *
@@ -14,6 +15,7 @@ class MovieDBServiceProvider extends ServiceProvider {
         require __DIR__ . '/Http/routes.php';
 	    $this->loadViewsFrom(__DIR__ . '/views', 'moviedb'); 
 	}
+
 
 	/**
 	 * Register the application services.
