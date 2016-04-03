@@ -1,4 +1,4 @@
-# Laravel OMDb Package
+# Laravel OMDb API Package
 
 ## Introduction
 A Laravel package to access the OMDb API in your Laravel application.
