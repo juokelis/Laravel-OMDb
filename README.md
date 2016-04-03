@@ -31,5 +31,5 @@ Visit ```/moviedb/tt2937696``` in your web browser to see it in action
 To access the package in your application use:
 ```
 use DigiPig\MovieDB;
-$movie = \MovieDB::getMovie('tt2937696');
+$MoviesArray = \MovieDB::getMovie('tt2937696');
 ```
