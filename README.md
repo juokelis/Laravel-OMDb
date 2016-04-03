@@ -24,7 +24,7 @@ Add this to your `app.php` config file in aliases:
 'MovieDB' => DigiPig\MovieDB\MovieDBFacade::class
 ```
 
-Run 
+Run the following composer command
 ```
 composer dumpautoload
 ```
