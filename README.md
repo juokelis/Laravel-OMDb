@@ -1,10 +1,10 @@
 # Laravel OMDB Package
 
 ## Introduction
-A Laravel package to access OMDB api. 
+A Laravel package to access the OMDB API in your Laravel application.
 
-## What is OMDB?
-The OMDb API is a free web service to obtain movie information, all content and images on the site are contributed and maintained by our users.
+## What is the OMDB API?
+The OMDb API is a free web service to obtain movie information, all content and images on the site are contributed and maintained by our users. Find out more here: http://www.omdbapi.com/
 
 ## Installation
 Add this to your `composer.json` under psr-4:
@@ -23,5 +23,5 @@ Add this to your `app.php` config file in aliases:
 ```
 
 To access the package in your controllers/models use 
-use DigiPig\MovieDB;
-$movie = \MovieDB::getMovie('tt2937696');
+```use DigiPig\MovieDB;
+$movie = \MovieDB::getMovie('tt2937696');```
