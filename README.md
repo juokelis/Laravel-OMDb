@@ -22,6 +22,12 @@ Add this to your `app.php` config file in aliases:
 'MovieDB' => DigiPig\MovieDB\MovieDBFacade::class
 ```
 
+Run 
+```
+composer dumpautoload
+```
+Visit ```/moviedb/tt2937696``` in your web browser to see it in action
+
 To access the package in your application use:
 ```
 use DigiPig\MovieDB;
