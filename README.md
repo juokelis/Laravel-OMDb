@@ -34,5 +34,7 @@ Visit ```http://YOURDOMAIN.com/moviedb/tt2937696``` in your web browser to see i
 To access the package in your application use:
 ```
 use DigiPig\MovieDB;
+```
+```
 $MoviesArray = \MovieDB::getMovie('tt2937696');
 ```
