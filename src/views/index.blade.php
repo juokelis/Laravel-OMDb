@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1>Hello, <?php echo $Title; ?></h1>
+        <h1><?php echo $Title; ?></h1>
         <ul>
             <li>Year <?php echo $Year; ?></li>
             <li>Rated <?php echo $Rated; ?></li>
