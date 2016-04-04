@@ -7,6 +7,6 @@ class MovieDBController extends BaseController
     public function getMovie($IMDBID)
     { 
         $MovieObject = \MovieDB::getMovie($IMDBID);  
-        return view('moviedb::index', $MovieObject);  
+        return view('moviedb::movie', $MovieObject);  
     }
 }
