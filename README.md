@@ -28,6 +28,12 @@ Run the following composer command
 ```
 composer dumpautoload
 ```
+
+Run the following artisan command. This will publish the package views into your app so you can customize the views.
+```
+artisan vendor:publish
+```
+
 ## Use
 Visit ```http://YOURDOMAIN.com/moviedb/tt2937696``` in your web browser to see it in action
 

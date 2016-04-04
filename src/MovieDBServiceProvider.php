@@ -13,14 +13,19 @@ class MovieDBServiceProvider extends ServiceProvider {
 	public function boot()
 	{ 
         require __DIR__ . '/Http/routes.php';
-	    $this->loadViewsFrom(__DIR__ . '/views', 'moviedb'); 
+	    $this->loadViewsFrom(__DIR__ . '/views', 'moviedb');  
+        
+         $this->publishes([
+        __DIR__.'/views' => resource_path('views/vendor/moviedb'),
+    ]);
+        
 	}
 
 
 	/**
 	 * Register the application services.
 	 *
-	 * @return void
+	 * @return MovieDB
 	 */
 	public function register()
 	{ 
