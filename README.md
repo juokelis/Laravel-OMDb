@@ -9,19 +9,24 @@ The OMDb API is a free web service to obtain movie information. OMDb API's data 
 OMDb API Homepage: http://www.omdbapi.com/
 
 ## Installation
-Add this to your `composer.json` under `psr-4`:
+Add this to your `composer.json` under `require`:
 ```
-"DigiPig\\MovieDB\\": "packages/digipig/moviedb/src/"
+"mikemike/moviedb": "dev-master"
+```
+
+Then run:
+```
+composer install 
 ```
 
 Add this to your `app.php` config file in providers:
 ```
-DigiPig\MovieDB\MovieDBServiceProvider::class
+Mikemike\MovieDB\MovieDBServiceProvider::class
 ```
 
 Add this to your `app.php` config file in aliases:
 ```
-'MovieDB' => DigiPig\MovieDB\MovieDBFacade::class
+'MovieDB' => Mikemike\MovieDB\MovieDBFacade::class
 ```
 
 Run the following composer command
@@ -29,18 +34,15 @@ Run the following composer command
 composer dumpautoload
 ```
 
-Run the following artisan command. This will publish the package views into your app so you can customize the views.
-```
-artisan vendor:publish
-```
-
 ## Use
-Visit ```http://YOURDOMAIN.com/moviedb/tt2937696``` in your web browser to see it in action
 
 To access the package in your application use:
 ```
-use DigiPig\MovieDB;
+use Mikemike\MovieDB;
 ```
 ```
-$MoviesArray = \MovieDB::getMovie('tt2937696');
+$movies = \MovieDB::getMovie('tt2937696');
+```
+```
+$search = \MovieDB::query('Game of thrones');
 ```

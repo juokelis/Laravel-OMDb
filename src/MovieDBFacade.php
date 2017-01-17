@@ -1,6 +1,6 @@
 <?php
 
-namespace DigiPig\MovieDB;
+namespace Mikemike\MovieDB;
 
 use Illuminate\Support\Facades\Facade;
 

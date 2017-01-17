@@ -1,4 +1,4 @@
-<?php namespace DigiPig\MovieDB;
+<?php namespace Mikemike\MovieDB;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -11,13 +11,7 @@ class MovieDBServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot()
-	{ 
-        require __DIR__ . '/Http/routes.php';
-	    $this->loadViewsFrom(__DIR__ . '/views', 'moviedb');  
-        
-         $this->publishes([
-        __DIR__.'/views' => resource_path('views/vendor/moviedb'),
-    ]);
+	{
         
 	}
 

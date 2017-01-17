@@ -1,11 +1,9 @@
-<?php namespace DigiPig\MovieDB;
+<?php namespace Mikemike\MovieDB;
  
 class MovieDB {
  
     private $plot = 'short';
-    private $tomatoes = 'true';
-    private $type = 'movie'; 
-  
+    private $tomatoes = 'true';  
   
     /**
      * MovieDB::getMovie()
@@ -52,7 +50,17 @@ class MovieDB {
      */
      
     function getMovie($IMDBID) { 
-       return $this->getCURL('http://www.omdbapi.com/?i='.$IMDBID.'&plot='.$this->plot.'&r=json&type='.$this->type.'&tomatoes='.$this->tomatoes);
+       return $this->getCURL('http://www.omdbapi.com/?i='.$IMDBID.'&plot='.$this->plot.'&r=json&tomatoes='.$this->tomatoes);
+    }
+    
+    /**
+     * Perform a search
+     *
+     * @param String $query
+     * @return
+     */
+    function query($query) { 
+       return $this->getCURL('http://www.omdbapi.com/?t='.urlencode($query));
     }
     
  

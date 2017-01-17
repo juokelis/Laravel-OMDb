@@ -1,17 +1,17 @@
 {
-    "name": "digipig/moviedb",
+    "name": "mikemike/moviedb",
     "description": "A Laravel package to access the OMDb API in your Laravel application.",
     "keywords": ["laravel", "OMDb", "api", "movies"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Jorge A. Gonzalez",
-            "email": "adnasium@gmail.com"
+            "name": "Mike Griffiths",
+            "email": "mgriffiths@gmail.com"
         }
     ], 
     "autoload": {
         "psr-4": {
-            "DigiPig\\MovieDB\\": "src/"
+            "Mikemike\\MovieDB\\": "src/"
         }
     },
     "require": {
