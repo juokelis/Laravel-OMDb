@@ -9,6 +9,16 @@ The OMDb API is a free web service to obtain movie information. OMDb API's data 
 OMDb API Homepage: http://www.omdbapi.com/
 
 ## Installation
+Add this to your `composer.json` under `repositories`:
+```
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/mikemike/Laravel-OMDb"
+      }
+    ],
+```
+
 Add this to your `composer.json` under `require`:
 ```
 "mikemike/moviedb": "dev-master"
