@@ -86,7 +86,7 @@ class MovieDB {
 
        $url = 'http://www.omdbapi.com/?s=';
        $url.= urlencode($query);
-       if($fuzzy){
+       if(isset($fuzzy)){
            $url.= '*';
        }
 
