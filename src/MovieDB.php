@@ -59,8 +59,18 @@ class MovieDB {
      * @param String $query
      * @return
      */
-    function query($query) { 
-       return $this->getCURL('http://www.omdbapi.com/?t='.urlencode($query));
+    function query($query, array $options=[]) { 
+       if(!empty($options['fuzzy'])){
+           $fuzzy = ($options['fuzzy'] == true ? true : false);
+       }
+
+       $url = 'http://www.omdbapi.com/?t=';
+       $url.= urlencode($query);
+       if($fuzzy){
+           $url.= '*';
+       }
+
+       return $this->getCURL($url);
     }
     
  
