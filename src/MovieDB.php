@@ -54,17 +54,37 @@ class MovieDB {
     }
     
     /**
-     * Perform a search
+     * Perform a query on a single record
      *
      * @param String $query
      * @return
      */
-    function query($query, array $options=[]) { 
+    function single_query($query, array $options=[]) { 
        if(!empty($options['fuzzy'])){
            $fuzzy = ($options['fuzzy'] == true ? true : false);
        }
 
        $url = 'http://www.omdbapi.com/?t=';
+       $url.= urlencode($query);
+       if($fuzzy){
+           $url.= '*';
+       }
+
+       return $this->getCURL($url);
+    }
+    
+    /**
+     * Perform a search
+     *
+     * @param String $query
+     * @return
+     */
+    function search_query($query, array $options=[]) { 
+       if(!empty($options['fuzzy'])){
+           $fuzzy = ($options['fuzzy'] == true ? true : false);
+       }
+
+       $url = 'http://www.omdbapi.com/?s=';
        $url.= urlencode($query);
        if($fuzzy){
            $url.= '*';
