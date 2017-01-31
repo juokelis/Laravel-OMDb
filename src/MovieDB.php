@@ -2,7 +2,7 @@
  
 class MovieDB {
  
-    private $plot = 'short';
+    private $plot = 'full';
     private $tomatoes = 'true';  
   
     /**
