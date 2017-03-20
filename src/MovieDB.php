@@ -90,6 +90,10 @@ class MovieDB {
            $url.= '*';
        }
 
+       if(isset($options['page'])) {
+           $url.= '&page=' . $options['page'];
+       }
+
        return $this->getCURL($url);
     }
     
