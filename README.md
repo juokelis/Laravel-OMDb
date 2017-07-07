@@ -14,41 +14,43 @@ Add this to your `composer.json` under `repositories`:
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://github.com/mikemike/Laravel-OMDb"
+        "url": "https://github.com/juokelis/Laravel-OMDb"
       }
     ],
 ```
 
 Add this to your `composer.json` under `require`:
 ```
-"mikemike/moviedb": "dev-master"
+"juokelis/moviedb": "dev-master"
 ```
 
 Then run:
 ```
+composer update
 composer install 
 ```
 
 Add this to your `app.php` config file in providers:
 ```
-Mikemike\MovieDB\MovieDBServiceProvider::class
+Juokelis\MovieDB\MovieDBServiceProvider::class
 ```
 
 Add this to your `app.php` config file in aliases:
 ```
-'MovieDB' => Mikemike\MovieDB\MovieDBFacade::class
+'MovieDB' => Juokelis\MovieDB\MovieDBFacade::class
 ```
 
 Run the following composer command
 ```
 composer dumpautoload
+php artisan vendor:publish
 ```
 
 ## Use
 
 To access the package in your application use:
 ```
-use Mikemike\MovieDB;
+use Juokelis\MovieDB;
 ```
 ```
 $movies = \MovieDB::getMovie('tt2937696');

@@ -1,4 +1,4 @@
-<?php namespace Mikemike\MovieDB;
+<?php namespace Juokelis\MovieDB;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +12,9 @@ class MovieDBServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-        
+        $this->publishes([
+            __DIR__.'/../config/moviedb.php' => config_path('moviedb.php'),
+        ]);
 	}
 
 

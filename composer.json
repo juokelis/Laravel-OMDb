@@ -1,9 +1,13 @@
 {
-    "name": "mikemike/moviedb",
+    "name": "juokelis/moviedb",
     "description": "A Laravel package to access the OMDb API in your Laravel application.",
     "keywords": ["laravel", "OMDb", "api", "movies"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Vilnius Ramanauskas",
+            "email": "vilnius.ramanauskas@gmail.com"
+        },
         {
             "name": "Mike Griffiths",
             "email": "mgriffiths@gmail.com"
@@ -11,7 +15,7 @@
     ], 
     "autoload": {
         "psr-4": {
-            "Mikemike\\MovieDB\\": "src/"
+            "Juokelis\\MovieDB\\": "src/"
         }
     },
     "require": {

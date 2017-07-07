@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikemike\MovieDB;
+namespace Juokelis\MovieDB;
 
 use Illuminate\Support\Facades\Facade;
 
